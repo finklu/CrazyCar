@@ -3,6 +3,12 @@
 
 void HAL_GPIO_Init(void);
 
+typedef struct
+{
+    unsigned char active;
+    unsigned char button;
+}ButtonCom;
+
 // #####   PORT1   #####
 #define RPM_SENSOR          BIT3
 #define RPM_SENSOR_DIR      BIT4
